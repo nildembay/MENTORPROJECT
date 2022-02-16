@@ -1,0 +1,53 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-16T08:57:57.003Z",
+        "line": 3,
+        "name": "deneme1",
+        "description": "",
+        "id": "deneme;deneme1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3842034000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user send a GET request",
+            "match": {
+              "location": "api.stepdefinitions.MyStepdefs.userSendAGETRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 119930600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user get a response",
+            "match": {
+              "location": "api.stepdefinitions.MyStepdefs.userGetAResponse()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "deneme",
+    "description": "",
+    "id": "deneme",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/apiFeature/apiSample.feature",
+    "tags": []
+  }
+]
