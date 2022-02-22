@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
         features="src/test/resources/uiFeature",
         glue="ui/stepdefinitions",
         tags="@all"  ,
-
         dryRun= false
 )
 public class Runner {

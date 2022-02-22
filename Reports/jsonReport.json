@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-16T08:57:57.003Z",
+        "start_timestamp": "2022-02-18T15:23:28.537Z",
         "line": 3,
         "name": "deneme1",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3842034000,
+              "duration": 3662982100,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 119930600,
+              "duration": 109342700,
               "status": "passed"
             },
             "line": 5,

@@ -1,5 +1,113 @@
 [
   {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-22T19:53:18.015Z",
+        "line": 3,
+        "name": "user verify the ALL menu",
+        "description": "",
+        "id": "all-menu;user-verify-the-all-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9545835400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user goes to Amazon Home Page",
+            "match": {
+              "location": "ui.stepdefinitions.TC01StepDefinitions.user_goes_to_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1143637400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks ALL menu",
+            "match": {
+              "location": "ui.stepdefinitions.AllMenuAssertion.user_clicks_all_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15922689100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user selects \"Electronics\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Electronics\"",
+                  "offset": 13
+                }
+              ],
+              "location": "ui.stepdefinitions.AllMenuAssertion.user_selects(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28196200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user verifies that there are 17 subcategories",
+            "match": {
+              "arguments": [
+                {
+                  "val": "17",
+                  "offset": 29
+                }
+              ],
+              "location": "ui.stepdefinitions.AllMenuAssertion.user_verifies_that_there_are_subcategories(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 896674600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies the title of all subcategories",
+            "match": {
+              "location": "ui.stepdefinitions.AllMenuAssertion.userVerifiesTheTitleOfAllSubcategories()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "ALL Menu",
+    "description": "",
+    "id": "all-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeature/allMenuAssertion.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
     "line": 4,
     "elements": [
       {
@@ -11,7 +119,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7223664000,
+              "duration": 1766989700,
               "status": "passed"
             },
             "line": 7,
@@ -23,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 2273603600,
+              "duration": 2503928200,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +144,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-16T08:58:33.931Z",
+        "start_timestamp": "2022-02-22T19:53:45.724Z",
         "line": 10,
         "name": "Amazon invalid sign in",
         "description": "",
@@ -46,7 +154,7 @@
         "steps": [
           {
             "result": {
-              "duration": 168905000,
+              "duration": 241862000,
               "status": "passed"
             },
             "line": 11,
@@ -58,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 1012585200,
+              "duration": 1378066800,
               "status": "passed"
             },
             "line": 12,
@@ -70,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 66960900,
+              "duration": 71959800,
               "status": "passed"
             },
             "line": 13,

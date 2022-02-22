@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
                 "json:Reports/jsonReport.json"},
         features="src/test/resources/apiFeature",
         glue="api/stepdefinitions",
-        dryRun=false,
+        //dryRun=false,
         tags="@api",
         publish=true
 )
