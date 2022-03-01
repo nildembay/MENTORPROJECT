@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"pretty", "html:Reports/htmlReport.html",
                 "json:Reports/jsonReport.json"},
         features="src/test/resources/apiFeature",
-        glue="api/stepdefinitions",
+        glue="stepdefinitions",
         //dryRun=false,
         tags="@api",
         publish=true

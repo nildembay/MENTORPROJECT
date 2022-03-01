@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-18T15:23:28.537Z",
+        "start_timestamp": "2022-03-01T17:54:48.417Z",
         "line": 3,
         "name": "deneme1",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3662982100,
+              "duration": 3867651300,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 109342700,
+              "duration": 113936100,
               "status": "passed"
             },
             "line": 5,
@@ -48,6 +48,88 @@
     "id": "deneme",
     "keyword": "Feature",
     "uri": "file:src/test/resources/apiFeature/apiSample.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-01T17:54:52.548Z",
+        "line": 3,
+        "name": "Create a board",
+        "description": "",
+        "id": "trello-api-testing;create-a-board",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat api.stepdefinitions.CreateBoardStepDef.send_a_request_for_create_board(CreateBoardStepDef.java:18)\r\n\tat ✽.Send a request for create \"testing\" board(file:///C:/Users/niluf/IdeaProjects/MENTORPROJECT/src/test/resources/apiFeature/createBoard.feature:4)\r\n",
+              "duration": 6996000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Send a request for create \"testing\" board",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testing\"",
+                  "offset": 26
+                }
+              ],
+              "location": "api.stepdefinitions.CreateBoardStepDef.send_a_request_for_create_board(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1998400,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "assert the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "api.stepdefinitions.CreateBoardStepDef.assert_the_status_code_is(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "assert the board name is \"testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testing\"",
+                  "offset": 25
+                }
+              ],
+              "location": "api.stepdefinitions.CreateBoardStepDef.assert_the_board_name_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "trello api testing",
+    "description": "",
+    "id": "trello-api-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/apiFeature/createBoard.feature",
     "tags": []
   }
 ]
