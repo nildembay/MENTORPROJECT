@@ -1,5 +1,6 @@
 package api.stepdefinitions;
 
+
 import io.cucumber.java.en.*;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -15,6 +16,7 @@ public class CreateBoard extends TestBaseApi {
 
     Response response;
     JsonPath jsonPath;
+
 
 
     @Given("Send POST request for create {string} board")
@@ -61,6 +63,7 @@ public class CreateBoard extends TestBaseApi {
         Assert.assertEquals(boardName,jsonPath.getString("name"));
 
     }
+
 
 
 }
